@@ -1,11 +1,11 @@
 # backup-service-linux
 Yedek alma &amp; Servis açma işlemi
 
-# 1. Adım Shell Scrip dosya oluşturma
+# 1. Adım Shell Script dosya oluşturma
 Kendinize göre yolunu değiştirebilirsiniz. Aşağıda önce dosyayı oluşturuyoruz sonra ise içerisine kodlarını yazıyoruz.
 
 ```ruby
-// Dosya oluşturma kodu
+// Dosya oluşturma komutu
 sudo nano /usr/bin/script.sh
 ```
 ```ruby
@@ -36,13 +36,13 @@ if [[ "$current_minute" == "00" ]]; then
 fi
 ```
 ```ruby
-// Dosyaya yetki verme kodu
+// Dosyaya yetki verme komutu
 sudo chmod +x /usr/bin/script.sh 
 ```
 
 # 2. Adım Systemd'de servis dosyası oluşturalım
 ```ruby
-// systemd'de servis dosyası oluşturma kodu
+// systemd'de servis dosyası oluşturma komutu
 sudo nano /lib/systemd/system/shellscript.service 
 ```
 
